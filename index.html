@@ -12,23 +12,22 @@
   <br><div class='nowfontsize'>30 px</div>
   <input type="range" min="10" max="100" step="0.2" id="slider"><br><br><hr><br>
 
-  <div name='text' class='Comforter'>keep going</div>
-  <div name='text' class='Roboto'>keep going</div>
-  <div name='text' class='Mochiy'>keep going</div>
-  <div name='text' class='Sedgwick'>keep going</div>
-  <div name='text' class='Source'>keep going</div>
-  <div name='text' class='Rubik'>keep going</div>
-  <div name='text' class='Neonderthaw'>keep going</div>
-  <div name='text' class='Pacifico'>keep going</div>
+  <div name='text' class='Comforter'>Comforter</div>
+  <div name='text' class='Roboto'>Roboto</div>
+  <div name='text' class='Mochiy'>Mochiy Pop P One</div>
+  <div name='text' class='Sedgwick'>Sedgwick Ave</div>
+  <div name='text' class='Source'>Source Code Pro</div>
+  <div name='text' class='Rubik'>Rubik Beastly</div>
+  <div name='text' class='Neonderthaw'>Neonderthaw</div>
+  <div name='text' class='Pacifico'>Pacifico</div>
 
-
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
   $('input').on('change', function() {
     var v = $(this).val();
     $('div[name=text]').css('font-size', v + 'px')
     $('.nowfontsize').html(v + 'px')
   });
-</script>
+  </script>
+</body>
 </html>

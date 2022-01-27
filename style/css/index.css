@@ -1,0 +1,244 @@
+@charset "UTF-8";
+a {
+  font-family: Mochiy Pop P One;
+}
+
+input[type=range] {
+  width: 70%;
+}
+
+input[type=radio] {
+  font-family: Arial;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 25px;
+}
+
+.fontbox .Comforter {
+  border: 5px solid #000000;
+  font-family: Comforter;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Comforter:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Roboto {
+  border: 5px solid #000000;
+  font-family: Roboto;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Roboto:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Mochiy {
+  border: 5px solid #000000;
+  font-family: Mochiy Pop P One;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Mochiy:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Sedgwick {
+  border: 5px solid #000000;
+  font-family: Sedgwick Ave;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Sedgwick:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Source {
+  border: 5px solid #000000;
+  font-family: Source Code Pro;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Source:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Rubik {
+  border: 5px solid #000000;
+  font-family: Rubik Beastly;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Rubik:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Neonderthaw {
+  border: 5px solid #000000;
+  font-family: Neonderthaw;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Neonderthaw:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .Pacifico {
+  border: 5px solid #000000;
+  font-family: Pacifico;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.fontbox .Pacifico:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.fontbox .showfontname {
+  font-family: 고딕;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.nowfontsize {
+  font-family: Mochiy Pop P One;
+  font-size: 20px;
+  display: inline;
+  margin-left: 10px;
+  line-height: 100px;
+}
+
+.popup {
+  display: blcok;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 300px;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 1000px 0px;
+          box-shadow: 0 2px 1000px 0px;
+}
+
+.popup > .title {
+  border-radius: 15px 15px 0 0;
+  min-height: 40px;
+  color: #fff;
+  background-color: #b66;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+}
+
+.popup > .import_title {
+  min-height: 40px;
+  color: #fff;
+  background-color: #b66;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+}
+
+.popup > .import_title:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.popup > .content {
+  padding: 20px;
+  font-size: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 70px;
+}
+
+.popup > .import_content {
+  display: none;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 40px;
+}
+
+.popup > .import_content .import_code {
+  font-size: 15px;
+  margin-left: px;
+}
+
+.popup > .cmd {
+  bottom: 0;
+  min-height: 40px;
+  padding: 15px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+  min-height: 40px;
+  text-align: right;
+}
+
+.popup > .cmd .button {
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+}
+
+.popup > .cmd .button:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+/*.backon
+  content: ""
+  width: 100%
+  height: 100%
+  background: #00000054
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1*/
+/*# sourceMappingURL=index.css.map */

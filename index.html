@@ -4,30 +4,105 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/css/footer.css" />
-  <style>@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Pacifico&family=Roboto:ital,wght@1,100&family=Rubik+Beastly&family=Sedgwick+Ave&family=Source+Code+Pro&display=swap');</style>
+  <link rel="stylesheet" href="./style/css/index.css" />
+  <style>@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Pacifico&family=Roboto&family=Rubik+Beastly&family=Sedgwick+Ave&family=Source+Code+Pro&display=swap');</style>
   <title>Browse Fonts - Onoffmix</title>
 </head>
 <body>
-  <br><div class='nowfontsize'>30 px</div>
-  <input type="range" min="10" max="100" step="0.2" id="slider"><br><br><hr><br>
+  <div class='nowfontsize'>30</div><a> px</a>
+  <input type="range" min="10" max="100" step="0.2" id="slider"><hr>
 
-  <div name='text' class='Comforter'>Comforter</div>
-  <div name='text' class='Roboto'>Roboto</div>
-  <div name='text' class='Mochiy'>Mochiy Pop P One</div>
-  <div name='text' class='Sedgwick'>Sedgwick Ave</div>
-  <div name='text' class='Source'>Source Code Pro</div>
-  <div name='text' class='Rubik'>Rubik Beastly</div>
-  <div name='text' class='Neonderthaw'>Neonderthaw</div>
-  <div name='text' class='Pacifico'>Pacifico</div>
+  <div class='fontbox'>
+    <div name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</div>
+    <div name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</div>
+  </div>
+  
+  <div class="popup">
+    <div class="title">text</div>
+    <div class="content">
+      <div style="font-weight: 200">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 200; font-style: italic">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 400">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 400; font-style: italic">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 600">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 600; font-style: italic">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 900">Almost before we knew it, we had left the ground.</div>
+      <div style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</div>
+    </div>
+    <div class="import_title">Use on the web</div>
+    <div class="import_content">
+      <div>To embed a font, copy the code into the <head> of your html</div>
+      <input type="radio" name= import_type value="import_link">&lt;link&gt;
+      <input type="radio" name= import_type value="import_tag">@import&ensp;
+      <input type="submit" id=radio_btn value="확인">
+      <div name="import_code" class="import_code"></div>
+    </div>
+    <div class="cmd">
+      <input type="button" class="button" value="close">
+    </div>
+  </div>
 
+  
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
   <script>
-  $('input').on('change', function() {
-    var v = $(this).val();
-    $('div[name=text]').css('font-size', v + 'px')
-    $('.nowfontsize').html(v + 'px')
-  });
+    $('input').on('change', function () {
+      var v = $(this).val();
+      $('div[name=text]').css('font-size', v + 'px')
+      $('div[name=fontname]').css('font-size', v / 2 + 'px')
+
+      if(v=='import_link'||v=='import_tag'){
+        v = $('.nowfontsize').text();
+      }
+      $('.nowfontsize').html(v)
+    });
   </script>
+
+  <script>
+    $(document).ready(function( ){     
+      $("div[name=text]").on("click", function(event) {
+        var fontname = this.className.replaceAll(" ","+")
+        $(".popup").show();
+        $('.title').html(this.className)
+        $('.content').css('font-family',this.className)
+
+        $(document).ready(function () {
+          $('#radio_btn').click(function () {
+            var radioVal = $('input[name="import_type"]:checked').val();
+
+            if(radioVal == 'import_link'){
+              $('.import_code').html('&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt<br>')
+              $('.import_code').append('&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt<br>')
+              $('.import_code').append(`&lt;link href=https://fonts.googleapis.com/css2?family=${fontname}&display=swap" rel="stylesheet"&gt;`)
+            }
+            else if(radioVal == 'import_tag'){
+              $('.import_code').html(`&lt;style&gt;@import url('https://fonts.googleapis.com/css2?family=${fontname}&display=swap');&lt;style&gt;`)
+            }
+          });
+        });
+      });
+      
+      $("body").on("click", function(event) { 
+          if(event.target.value == 'close' || event.target.className == 'backon'){
+              $(".popup").hide();
+              $(".backon").hide();
+          }
+      });
+
+      $("body").on("click", function(event) { 
+          if(event.target.className == 'import_title'){
+              $(".import_content").show()
+          }
+      });
+    });
+  </script>
+
 </body>
 </html>

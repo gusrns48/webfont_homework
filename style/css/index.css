@@ -144,7 +144,7 @@ hr {
 }
 
 .popup {
-  display: blcok;
+  display: none;
   z-index: 1;
   position: absolute;
   top: 50%;

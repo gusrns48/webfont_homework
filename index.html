@@ -9,31 +9,36 @@
   <title>Browse Fonts - Onoffmix</title>
 </head>
 <body>
-  <div class='nowfontsize'>30</div><a> px</a>
-  <input type="range" min="10" max="100" value="30" step="0.2" id="slider"><hr>
+  <header>
+    <div class='nowfontsize'>30</div><a> px</a>
+    <input type="range" min="10" max="100" value="30" step="0.2" id="slider"><hr>
+  </header>
 
-  <div class='fontbox'>
-    <div tabindex="0" name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</div>
-    <div tabindex="0" name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</div>
-  </div>
+  <section class='fontbox'>
+    <article tabindex="0" name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</article>
+  </section>
+  <section class='fontbox'>
+    <article tabindex="0" name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</article>
+    <article tabindex="0" name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</article>
+  </section>
+
   
-  <div class="popup">
+  <section class="popup">
     <div class="title">text</div>
     <div class="content">
-      <div style="font-weight: 200">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 200; font-style: italic">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 400">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 400; font-style: italic">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 600">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 600; font-style: italic">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 900">Almost before we knew it, we had left the ground.</div>
-      <div style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</div>
+      <ul style="font-weight: 200">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 200; font-style: italic">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 400">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 400; font-style: italic">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 600">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 600; font-style: italic">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 900">Almost before we knew it, we had left the ground.</ul>
+      <ul style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</ul>
     </div>
     <div tabindex="0" class="import_title">Use on the web</div>
     <div class="import_content">
@@ -53,7 +58,7 @@
   <script>
     $('input').on('change', function () {
       var v = $(this).val();
-      $('div[name=text]').css('font-size', v + 'px')
+      $('article[name=text]').css('font-size', v + 'px')
       $('div[name=fontname]').css('font-size', v / 2 + 'px')
 
       if(v=='import_link'||v=='import_tag'){
@@ -65,12 +70,12 @@
 
   <script>
     $(document).ready(function(){
-      $("div[name=text]").keydown(function(keyNum){ //fonts enter > detail popup_page
+      $("article[name=text]").keydown(function(keyNum){ //fonts enter > detail popup_page
         if(keyNum.keyCode == 13){
           this.click()
         }
       });
-      $("div[name=text]").on("click", function(event) { //fonts click > detail popup_page
+      $("article[name=text]").on("click", function(event) { //fonts click > detail popup_page
         var fontname = this.className.replaceAll(" ","+") //web-font Ex code parameter fontname
 
         $(".popup").show(); //popup_page show

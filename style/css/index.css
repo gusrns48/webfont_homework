@@ -28,6 +28,12 @@ input[type=radio] {
   line-height: 100px;
 }
 
+.fontbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .fontbox .Comforter {
   border: 5px solid #000000;
   font-family: Comforter;
@@ -187,14 +193,13 @@ input[type=radio] {
 }
 
 .popup {
-  display: none;
-  z-index: 10;
-  position: absolute;
+  display: blcok;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 300px;
+  min-width: 30px;
   max-width: 1000px;
   background-color: #fff;
   border-radius: 15px;
@@ -233,11 +238,8 @@ input[type=radio] {
   font-size: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 70px;
-}
-
-.popup .class {
-  padding: 20px;
+  -webkit-padding-start: 0px;
+  text-align: center;
 }
 
 .popup .import_content {

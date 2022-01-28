@@ -25,8 +25,7 @@ input[type=radio]
     line-height: 100px
 
 .fontbox
-  //display: flex
-  //flex-wrap: wrap
+  display: flex
   .Comforter
     border: 5px solid #000000
     font-family: Comforter
@@ -151,13 +150,13 @@ input[type=radio]
     margin-bottom: 20px
 
 .popup 
-  display: none
-  z-index: 10
-  position: absolute
+  display: blcok
+  //z-index: 10
+  position: relative //popup not broken
   top: 50%
   left: 50%
   transform: translate(-50%,-50%)
-  min-width: 300px
+  min-width: 30px
   max-width: 1000px
   background-color: #fff
   border-radius: 15px
@@ -175,7 +174,6 @@ input[type=radio]
     //vertical-align: middle
 
   .import_title
-    display:
     min-height: 40px
     color: #fff
     background-color: #b66
@@ -191,7 +189,9 @@ input[type=radio]
     font-size: 30px
     box-sizing: border-box
     //margin-bottom: 25px
-    line-height: 70px
+    //line-height: 70px
+    -webkit-padding-start: 0px
+    text-align: center
 
   .import_content
     display: none

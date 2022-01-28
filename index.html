@@ -64,8 +64,7 @@
   </script>
 
   <script>
-    $(document).ready(function( ){
-
+    $(document).ready(function(){
       $("div[name=text]").keydown(function(keyNum){ //fonts enter > detail popup_page
         if(keyNum.keyCode == 13){
           this.click()
@@ -86,10 +85,8 @@
         $('.title').html(this.className) //popup title, content font change
         $('.content').css('font-family',this.className)
 
-        $(document).ready(function () {
-          $('#radio_btn').click(function () { //web-font Ex code change and show
+        $('#radio_btn').click(function () { //web-font Ex code change and show
             var radioVal = $('input[name="import_type"]:checked').val(); //radio checked ?
-
             if(radioVal == 'import_link'){
               $('.import_code').html('&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt<br>')
               $('.import_code').append('&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt<br>')
@@ -99,7 +96,6 @@
               $('.import_code').html(`&lt;style&gt;@import url('https://fonts.googleapis.com/css2?family=${fontname}&display=swap');&lt;style&gt;`)
             }
             $('.import_code').show();
-          });
         });
       });
       

@@ -236,6 +236,10 @@ input[type=radio] {
   line-height: 70px;
 }
 
+.popup .class {
+  padding: 20px;
+}
+
 .popup .import_content {
   display: none;
   padding: 20px;

@@ -15,34 +15,30 @@
   </header>
 
   <main>
-    <section>
-      <div class="fontbox">
+    <section class="fontbox">
         <article tabindex="0" name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</article>
-      </div>
-      <div class="fontbox">
         <article tabindex="0" name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</article>
         <article tabindex="0" name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</article>
-      </div>
     </section>
 
 
     <section class="popup">
       <h1 class="title">text</h1>
-      <section class="content">
-        <ul style="font-weight: 200">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 200; font-style: italic">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 400">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 400; font-style: italic">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 600">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 600; font-style: italic">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 900">Almost before we knew it, we had left the ground.</ul>
-        <ul style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</ul>
-      </section>
+      <ul class="content">
+        <li style="font-weight: 200">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 200; font-style: italic">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 400">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 400; font-style: italic">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 600">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 600; font-style: italic">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 900">Almost before we knew it, we had left the ground.</li>
+        <li style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</li>
+      </ul>
       <div tabindex="0" class="import_title">Use on the web</div>
       <article class="import_content">
         <div>To embed a font, copy the code into the <head> of your html</div>
@@ -63,7 +59,7 @@
     $('input').on('change', function () {
       var v = $(this).val();
       $('article[name=text]').css('font-size', v + 'px')
-      $('div[name=fontname]').css('font-size', v / 2 + 'px')
+      $('div[name=fontname]').css('font-size', v / 3 + 'px')
 
       if(v=='import_link'||v=='import_tag'){
         v = $('.nowfontsize').text();

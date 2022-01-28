@@ -1,7 +1,12 @@
 @charset "UTF-8"
-
+html, body
+  width: 100vw
 body
+  margin: 0
   font-size: 16px
+
+.container
+  width: 100%
 
 a
   font-family: Mochiy Pop P One
@@ -27,6 +32,11 @@ input[type=radio]
 .fontbox
   display: flex
   font-size: 60px
+  flex-wrap: wrap
+  
+  article
+    width: 20%
+
   .Comforter
     border: 5px solid #000000
     font-family: Comforter
@@ -58,6 +68,7 @@ input[type=radio]
     font-family: Mochiy Pop P One
     margin: 10px 10px 10px 10px
     padding: 10px 10px 10px 10px
+    //min-width: 50px
     &:hover
       color: #fff
       background-color: #000

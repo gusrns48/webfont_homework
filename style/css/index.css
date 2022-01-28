@@ -226,7 +226,6 @@ input[type=radio] {
 .popup .import_title:hover {
   color: #fff;
   background-color: #000;
-  border-color: #000;
 }
 
 .popup .content {

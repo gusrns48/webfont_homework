@@ -118,8 +118,10 @@
       $(".import_title").on("click", function(event) { //web-font Ex code swich button
         if($('.import_content').css('display') =='none'){
           $('.import_content').show()
+          $('.import_title').css('background-color','#000')
         } else {
           $('.import_content').hide()
+          $('.import_title').css('background-color','#b66')
         }
       });
     });

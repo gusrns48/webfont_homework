@@ -20,6 +20,14 @@ input[type=radio] {
   margin-bottom: 20px;
 }
 
+.nowfontsize {
+  font-family: Mochiy Pop P One;
+  font-size: 20px;
+  display: inline;
+  margin-left: 10px;
+  line-height: 100px;
+}
+
 .fontbox .Comforter {
   border: 5px solid #000000;
   font-family: Comforter;
@@ -31,7 +39,11 @@ input[type=radio] {
 .fontbox .Comforter:hover {
   color: #fff;
   background-color: #000;
-  border-color: #000;
+}
+
+.fontbox .Comforter:focus {
+  color: #fff;
+  background-color: grey;
 }
 
 .fontbox .Roboto {
@@ -48,6 +60,11 @@ input[type=radio] {
   border-color: #000;
 }
 
+.fontbox .Roboto:focus {
+  color: #fff;
+  background-color: grey;
+}
+
 .fontbox .Mochiy {
   border: 5px solid #000000;
   font-family: Mochiy Pop P One;
@@ -60,6 +77,11 @@ input[type=radio] {
   color: #fff;
   background-color: #000;
   border-color: #000;
+}
+
+.fontbox .Mochiy:focus {
+  color: #fff;
+  background-color: grey;
 }
 
 .fontbox .Sedgwick {
@@ -76,6 +98,11 @@ input[type=radio] {
   border-color: #000;
 }
 
+.fontbox .Sedgwick:focus {
+  color: #fff;
+  background-color: grey;
+}
+
 .fontbox .Source {
   border: 5px solid #000000;
   font-family: Source Code Pro;
@@ -88,6 +115,11 @@ input[type=radio] {
   color: #fff;
   background-color: #000;
   border-color: #000;
+}
+
+.fontbox .Source:focus {
+  color: #fff;
+  background-color: grey;
 }
 
 .fontbox .Rubik {
@@ -104,6 +136,11 @@ input[type=radio] {
   border-color: #000;
 }
 
+.fontbox .Rubik:focus {
+  color: #fff;
+  background-color: grey;
+}
+
 .fontbox .Neonderthaw {
   border: 5px solid #000000;
   font-family: Neonderthaw;
@@ -116,6 +153,11 @@ input[type=radio] {
   color: #fff;
   background-color: #000;
   border-color: #000;
+}
+
+.fontbox .Neonderthaw:focus {
+  color: #fff;
+  background-color: grey;
 }
 
 .fontbox .Pacifico {
@@ -132,19 +174,16 @@ input[type=radio] {
   border-color: #000;
 }
 
+.fontbox .Pacifico:focus {
+  color: #fff;
+  background-color: grey;
+}
+
 .fontbox .showfontname {
   font-family: 고딕;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 20px;
-}
-
-.nowfontsize {
-  font-family: Mochiy Pop P One;
-  font-size: 20px;
-  display: inline;
-  margin-left: 10px;
-  line-height: 100px;
 }
 
 .popup {

@@ -10,17 +10,17 @@
 </head>
 <body>
   <div class='nowfontsize'>30</div><a> px</a>
-  <input type="range" min="10" max="100" step="0.2" id="slider"><hr>
+  <input type="range" min="10" max="100" value="30" step="0.2" id="slider"><hr>
 
   <div class='fontbox'>
-    <div name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</div>
-    <div name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</div>
+    <div tabindex="0" name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</div>
   </div>
   
   <div class="popup">
@@ -35,7 +35,7 @@
       <div style="font-weight: 900">Almost before we knew it, we had left the ground.</div>
       <div style="font-weight: 900; font-style: italic">Almost before we knew it, we had left the ground.</div>
     </div>
-    <div class="import_title">Use on the web</div>
+    <div tabindex="0" class="import_title">Use on the web</div>
     <div class="import_content">
       <div>To embed a font, copy the code into the <head> of your html</div>
       <input type="radio" name= import_type value="import_link">&lt;link&gt;
@@ -48,8 +48,6 @@
     </div>
   </div>
 
-  
-  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   
   <script>
@@ -66,7 +64,13 @@
   </script>
 
   <script>
-    $(document).ready(function( ){     
+    $(document).ready(function( ){
+
+      $("div[name=text]").keydown(function(keyNum){ //fonts enter > detail popup_page
+        if(keyNum.keyCode == 13){
+          this.click()
+        }
+      });
       $("div[name=text]").on("click", function(event) { //fonts click > detail popup_page
         var fontname = this.className.replaceAll(" ","+") //web-font Ex code parameter fontname
 
@@ -106,6 +110,11 @@
           }
       });
 
+      $(".import_title").keydown(function(keyNum){
+        if(keyNum.keyCode == 13){
+          this.click()
+        }
+      });
       $(".import_title").on("click", function(event) { //web-font Ex code swich button
         if($('.import_content').css('display') =='none'){
           $('.import_content').show()

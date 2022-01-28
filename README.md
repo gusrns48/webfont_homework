@@ -1,6 +1,5 @@
-# Web fonts
-
-## 기능: 웹폰트를 미리 보면서 선택할 수 있는 페이지
+## Web fonts
+기능: 웹폰트를 미리 보면서 선택할 수 있는 페이지
 
 ## 필수조건
 github.io hosting (O)

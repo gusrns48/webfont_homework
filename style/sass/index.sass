@@ -51,21 +51,26 @@ input[type=radio]
   height: 100%
   justify-content: center
   flex-wrap: wrap
-  flex-flow: wrap
-  align-items:center
+  //flex-flow: wrap
+  //align-items:center
   word-break: break-all
   
   li
-    width: 40vh
+    width: 10%
+    min-width: 20%
+    //max-width: 200px
+    @media (pointer:coarse)
+      width: 50vh
 
   .Comforter
     border: 5px solid #000000
     font-family: Comforter
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
+      
     &:focus
       color: #fff
       background-color: grey
@@ -74,7 +79,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Roboto
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -88,7 +93,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Mochiy Pop P One
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     //min-width: 50px
     &:hover
       color: #fff
@@ -103,7 +108,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Sedgwick Ave
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -117,7 +122,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Source Code Pro
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -131,7 +136,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Rubik Beastly
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -145,7 +150,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Neonderthaw
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -159,7 +164,7 @@ input[type=radio]
     border: 5px solid #000000
     font-family: Pacifico
     margin: 10px 10px 10px 10px
-    padding: 10px 10px 10px 10px
+    padding: 20px 20px 20px 20px
     &:hover
       color: #fff
       background-color: #000
@@ -170,7 +175,7 @@ input[type=radio]
 
   .showfontname 
     font-family: 고딕
-    font-size: 15px
+    font-size: 20px
     font-weight: bold
     margin-bottom: 20px
 
@@ -184,7 +189,7 @@ input[type=radio]
     min-height: 10%
   top: 50%
   left: 50%
-  transform: translate(-50%,-43%)
+  transform: translate(-50%,-50%)
   min-width: 1000px
   background-color: #fff
   border-radius: 15px

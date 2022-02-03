@@ -60,20 +60,25 @@ input[type=radio] {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
   word-break: break-all;
 }
 
 .fontbox li {
-  width: 40vh;
+  width: 10%;
+  min-width: 20%;
+}
+
+@media (pointer: coarse) {
+  .fontbox li {
+    width: 50vh;
+  }
 }
 
 .fontbox .Comforter {
   border: 5px solid #000000;
   font-family: Comforter;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Comforter:hover {
@@ -90,7 +95,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Roboto;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Roboto:hover {
@@ -108,7 +113,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Mochiy Pop P One;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Mochiy:hover {
@@ -126,7 +131,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Sedgwick Ave;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Sedgwick:hover {
@@ -144,7 +149,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Source Code Pro;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Source:hover {
@@ -162,7 +167,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Rubik Beastly;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Rubik:hover {
@@ -180,7 +185,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Neonderthaw;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Neonderthaw:hover {
@@ -198,7 +203,7 @@ input[type=radio] {
   border: 5px solid #000000;
   font-family: Pacifico;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
 }
 
 .fontbox .Pacifico:hover {
@@ -214,7 +219,7 @@ input[type=radio] {
 
 .fontbox .showfontname {
   font-family: 고딕;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -224,8 +229,8 @@ input[type=radio] {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -43%);
-          transform: translate(-50%, -43%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   min-width: 1000px;
   background-color: #fff;
   border-radius: 15px;

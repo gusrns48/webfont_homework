@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class='nowfontsize'>60</div><a> px</a>
-    <input type="range" min="10" max="100" value="60" step="0.2" id="slider"><hr>
+    <input type="range" min="8" max="100" value="60" step="1" id="slider"><hr>
   </header>
 
   <main>
@@ -56,7 +56,6 @@
         </div>
       </section>
     </article>
-
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -65,7 +64,7 @@
     $('input').on('change', function () {
       var v = $(this).val();
       $('li[name=text]').css('font-size', v + 'px')
-      $('div[name=fontname]').css('font-size', v / 3 + 'px')
+      //$('div[name=fontname]').css('font-size', v / 3 + 'px')
 
       if(v=='import_link'||v=='import_tag'){
         v = $('.nowfontsize').text();

@@ -18,7 +18,7 @@ body
 
 
 .swiper 
-  display: none
+  display: block
   width: 90%
   height: 50%
   top: 10%
@@ -102,8 +102,9 @@ input[type=radio]
     line-height: 100px
 
 .fontbox
+  display: none
   font-size: 100%
-  display: flex
+  display: none
   font-size: 60px
   //max-width: 100%
   width: 100%
@@ -118,6 +119,7 @@ input[type=radio]
     width: 10%
     min-width: 20%
     //max-width: 200px
+    width: 50vh
 
   .Comforter
     border: 5px solid #000000
@@ -240,10 +242,11 @@ input[type=radio]
   display: none
   z-index: 10
   position: fixed  //popup not broken
+  min-width: 95%
+  min-height: 10%
   top: 50%
   left: 50%
   transform: translate(-50%,-50%)
-  min-width: 1000px
   background-color: #fff
   border-radius: 15px
   box-shadow: 0 2px 1000px 0px
@@ -271,7 +274,7 @@ input[type=radio]
       background-color: #000
 
   .content 
-    font-size: 30px
+    font-size: 12px
     //box-sizing: border-box
     //margin-bottom: 25px
     //line-height: 70px
@@ -281,13 +284,13 @@ input[type=radio]
   .import_content
     display: none
     padding: 20px
-    font-size: 20px
     font-family: Arial
     box-sizing: border-box
-    line-height: 40px
+    line-height: 30px
     .import_code
-      font-size: 15px
       margin-left: px
+      font-size: 10px
+      line-height: 10px
 
   .cmd 
     padding: 15px 15px

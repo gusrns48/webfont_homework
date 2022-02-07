@@ -1,6 +1,10 @@
 @charset "UTF-8"
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Pacifico&family=Roboto&family=Rubik+Beastly&family=Sedgwick+Ave&family=Source+Code+Pro&family=Bangers&family=Creepster&family=Gloria+Hallelujah&family=Lobster+Two&family=Neucha&family=Ole&family=Sacramento&family=Festive&display=swap')
 
+@mixin rmdef()
+  margin: 0px
+  padding: 0px
+
 body
   background-image: url('https://i.pinimg.com/originals/8a/0a/d9/8a0ad9b389a4ce9f5830c585b9e85f70.png')
   background-size: 100% 100%
@@ -8,18 +12,19 @@ body
   //backdrop-filter: blur(4px)
   //position: relative
 
+main
+  border-top: 1px solid #545458
+  padding-top: 2%
+  padding-bottom: 2%
+
 .swiper 
   display: none
-
-html, body
-  //width: 100vw
 
 h4
   margin: 0px
 
-ol
-  padding: 0px
-  margin: 0px
+ul
+  @include rmdef
 
 li
   list-style-type: none
@@ -35,11 +40,9 @@ body
 a
   font-family: Mochiy Pop P One
 
-hr
-  margin-bottom: 25px
-
 input[type=range] 
   width: 70%
+  border-bottom: 1px solid #3333
 
 input[type=radio]
   font-family: Arial
@@ -70,9 +73,8 @@ input[type=radio]
     min-width: 20%
     //max-width: 200px
 
-  .Comforter
+  %fontExam
     border: 5px solid transparent
-    font-family: Comforter
     margin: 10px 10px 10px 10px
     padding: 20px 20px 20px 20px
     color: #fff
@@ -81,193 +83,70 @@ input[type=radio]
       opacity: 0.5
     &:focus
       opacity: 0.5
+
+  .Comforter
+    font-family: Comforter
+    @extend %fontExam
 
   .Roboto 
-    border: 5px solid transparent
     font-family: Roboto
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
+    @extend %fontExam
 
   .Mochiy 
-    border: 5px solid transparent
     font-family: Mochiy Pop P One
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    //min-width: 50px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
+    @extend %fontExam
 
   .Sedgwick 
-    border: 5px solid transparent
     font-family: Sedgwick Ave
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
+    @extend %fontExam
 
   .Source 
-    border: 5px solid transparent
     font-family: Source Code Pro
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
-
+    @extend %fontExam
+    
   .Rubik 
-    border: 5px solid transparent
     font-family: Rubik Beastly
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
+    @extend %fontExam
 
   .Neonderthaw 
-    border: 5px solid transparent
     font-family: Neonderthaw
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
-
+    @extend %fontExam
 
   .Pacifico 
-    border: 5px solid transparent
     font-family: Pacifico
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Lobster 
-    border: 5px solid transparent
     font-family: Lobster Two
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
   
   .Bangers 
-    border: 5px solid transparent
     font-family: Bangers
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Sacramento 
-    border: 5px solid transparent
     font-family: Sacramento
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Gloria 
-    border: 5px solid transparent
     font-family: Gloria Hallelujah
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Festive 
-    border: 5px solid transparent
-    font-family: 'Festive'
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    font-family: Festive
+    @extend %fontExam
 
   .Neucha 
-    border: 5px solid transparent
     font-family: Neucha
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Ole 
-    border: 5px solid transparent
     font-family: Ole
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .Creepster 
-    border: 5px solid transparent
     font-family: Creepster
-    margin: 10px 10px 10px 10px
-    padding: 20px 20px 20px 20px
-    color: #fff
-    background-color: rgba(37, 34, 34, 0.6)
-    &:hover
-      opacity: 0.5
-    &:focus
-      opacity: 0.5
+    @extend %fontExam
 
   .showfontname 
     font-family: 고딕
@@ -287,6 +166,10 @@ input[type=radio]
   border-radius: 15px
   box-shadow: 0 2px 1000px 0px
   //box-shadow: 0 2px 55px -25px
+  ul
+    margin: 1em
+    padding-left: 2.5em
+    
 
   .title
     border-radius: 15px 15px 0 0
@@ -326,7 +209,6 @@ input[type=radio]
     line-height: 40px
     .import_code
       font-size: 15px
-      margin-left: px
 
   .cmd 
     padding: 15px 15px
@@ -341,8 +223,6 @@ input[type=radio]
         background-color: #000
         border-color: #000
 
-
-
 .backon
   display: none
   width: 100%
@@ -351,5 +231,35 @@ input[type=radio]
   top: 0
   left: 0
   z-index: 1
+  backdrop-filter: blur(4px)
+
+.footer
+  width: 100%
+  border-top: 1px solid #545458
+  .container
+    max-width: 1285px
+    margin: 20px
+    .first
+      display: flex
+      font-size: 12px
+      padding: 2px 0px
+      &>div
+        padding: 0px 12px
+        border-right: 1px solid #ffffff
+        cursor: pointer
+        &:nth-child(1)
+          border-left: 1px solid #ffffff
+          
+    .second
+      text-align: left
+      font-size: 12px
+      padding: 10px 0px
+    .third
+      text-align: left
+      font-size: 12px
+      padding-bottom: 10px
+
+.fontall
+  display: none
 
 /*# sourceMappingURL=footer.css.map */

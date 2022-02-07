@@ -4,27 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/css/index.css" />
-  <style>@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Pacifico&family=Roboto&family=Rubik+Beastly&family=Sedgwick+Ave&family=Source+Code+Pro&display=swap');</style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="./style/css/mobile.css" media="screen and (max-width:700px)" rel="stylesheet">
+  <link href="./style/css/index.css" media="screen and (min-width:701px)" rel="stylesheet">
   <title>Browse Fonts - Onoffmix</title>
 </head>
 <body>
   <header>
     <div class='nowfontsize'>60</div><a> px</a>
-    <input type="range" min="10" max="100" value="60" step="0.2" id="slider"><hr>
+    <input type="range" min="8" max="100" value="60" step="1" id="slider"><hr>
   </header>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <li name='text' id= 'Lobster Two' class="swiper-slide"><div style="font-family: Lobster Two">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Bangers' class="swiper-slide"><div style="font-family: Bangers">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Sacramento' class="swiper-slide"><div style="font-family: Sacramento">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Gloria Hallelujah' class="swiper-slide"><div style="font-family: Gloria Hallelujah">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Festive' class="swiper-slide"><div style="font-family: Festive">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Neucha' class="swiper-slide"><div style="font-family: Neucha">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Ole' class="swiper-slide"><div style="font-family: Ole">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Creepster' class="swiper-slide"><div style="font-family: Creepster">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Comforter' class="swiper-slide"><div style="font-family: Comforter">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Roboto' class="swiper-slide"><div style="font-family: Roboto">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Mochiy Pop P One' class="swiper-slide"><div style="font-family: Mochiy Pop P One">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Sedgwick Ave' class="swiper-slide"><div style="font-family: Sedgwick Ave">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Source Code Pro' class="swiper-slide"><div style="font-family: Source Code Pro">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Rubik Beastly' class="swiper-slide"><div style="font-family: Rubik Beastly">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Neonderthaw' class="swiper-slide"><div style="font-family: Neonderthaw">Almost before we knew it, we had left the ground.</div></li>
+      <li name='text' id= 'Pacifico' class="swiper-slide"><div style="font-family: Pacifico">Almost before we knew it, we had left the ground.</div></li>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
   <main>
     <section>
       <ol class="fontbox">
-        <li tabindex="0" name='text' class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</li>
-        <li tabindex="0" name='text' class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Lobster Two" class='Lobster Two'><div name='fontname' class='showfontname'>Lobster Two</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Bangers" class='Bangers'><div name='fontname' class='showfontname'>Bangers</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Sacramento" class='Sacramento'><div name='fontname' class='showfontname'>Sacramento</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Gloria Hallelujah" class='Gloria Hallelujah'><div name='fontname' class='showfontname'>Gloria Hallelujah</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Festive" class='Festive'><div name='fontname' class='showfontname'>Festive</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Neucha" class='Neucha'><div name='fontname' class='showfontname'>Neucha</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Ole" class='Ole'><div name='fontname' class='showfontname'>Ole</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Creepster" class='Creepster'><div name='fontname' class='showfontname'>Creepster</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Comforter" class='Comforter'><div name='fontname' class='showfontname'>Comforter</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Roboto" class='Roboto'><div name='fontname' class='showfontname'>Roboto</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Mochiy Pop P One" class='Mochiy Pop P One'><div name='fontname' class='showfontname'>Mochiy Pop P One</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Sedgwick Ave" class='Sedgwick Ave'><div name='fontname' class='showfontname'>Sedgwick Ave</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Source Code Pro" class='Source Code Pro'><div name='fontname' class='showfontname'>Source Code Pro</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Rubik Beastly" class='Rubik Beastly'><div name='fontname' class='showfontname'>Rubik Beastly</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Neonderthaw" class='Neonderthaw'><div name='fontname' class='showfontname'>Neonderthaw</div>Almost before we knew it, we had left the ground.</li>
+        <li tabindex="0" name='text' id="Pacifico" class='Pacifico'><div name='fontname' class='showfontname'>Pacifico</div>Almost before we knew it, we had left the ground.</li>
       </ol>
     </section>
 
@@ -56,16 +89,35 @@
         </div>
       </section>
     </article>
-
+    <div class="backon"></div>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 'auto',
+      initialSlide : 0,
+      centeredSlides: true,
+      spaceBetween: 15,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
   <script>
     $('input').on('change', function () {
       var v = $(this).val();
       $('li[name=text]').css('font-size', v + 'px')
-      $('div[name=fontname]').css('font-size', v / 3 + 'px')
+      //$('div[name=fontname]').css('font-size', v / 3 + 'px')
 
       if(v=='import_link'||v=='import_tag'){
         v = $('.nowfontsize').text();
@@ -82,8 +134,11 @@
         }
       });
       $("li[name=text]").on("click", function(event) { //fonts click > detail popup_page
-        var fontname = this.className.replaceAll(" ","+") //web-font Ex code parameter fontname
-
+        var fontname = this.id.replaceAll(" ","+") //web-font Ex code parameter fontname
+        
+        $(".backon").css("backdrop-filter", 'blur(4px)')
+        $(".backon").show();
+        
         $(".popup").show(); //popup_page show
 
         $("input[name=import_type]").each(function() { //radio reset
@@ -93,8 +148,8 @@
         $(".import_content").hide(); //Ex code reset
         $('.import_code').hide();
 
-        $('.title').html(this.className) //popup title, content font change
-        $('.content').css('font-family',this.className)
+        $('.title').html(this.id) //popup title, content font change
+        $('.content').css('font-family',this.id)
 
         $('#radio_btn').click(function () { //web-font Ex code change and show
             var radioVal = $('input[name="import_type"]:checked').val(); //radio checked ?
